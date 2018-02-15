@@ -1,0 +1,18 @@
+
+cd
+
+byte
+
+git clone https://github.com/byte-aces/week1-day2.git
+
+cd week1-day2
+
+git checkout -b sqlconsult
+
+touch example.py
+
+git add example.py
+
+git commit -m "Add example"
+
+git push origin sqlconsult

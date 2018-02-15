@@ -1,0 +1,10 @@
+{
+    "hostname"   : "patriot",
+    "num_vm"     : 1,
+    "pat_path"   : "/home/steve/dotfiles/do_key",
+    "platforms"  : [ "digital ocean" ],
+    "region"     : "nyc1",
+    "size"       : "1gb",
+    "tag"        : "test-node",
+    "working_dir": "logs"
+}
