@@ -1,6 +1,6 @@
 {
     "hostname"   : "patriot",
-    "num_vm"     : 1,
+    "num_vm"     : 3,
     "pat_path"   : "/home/steve/dotfiles/do_key",
     "platforms"  : [ "digital ocean" ],
     "region"     : "nyc1",
