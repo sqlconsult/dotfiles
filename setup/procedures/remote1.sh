@@ -25,7 +25,7 @@ if [ 1 -eq 1 ]; then
     ###
     mkdir ~/Downloads/
     cd ~/Downloads
-    wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/9.0.4+11/c2514751926b4512b076cc82f959763f/jdk-9.0.4_linux-x64_bin.tar.gz
+    wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/9.0.4+11/c2514751926b4512b076cc82f959763f/jdk-9.0.4_linux-x64_bin.tar.gz 1>/dev/null 2>/dev/null
     ###
     ### decompress into /usr/lib/jvm
     ###
@@ -322,7 +322,7 @@ sh -c 'echo "findtime = 1200" >> /etc/fail2ban/jail.local'
 
 sh -c 'echo "maxretry = 3" >> /etc/fail2ban/jail.local'
 
-sh -c 'echo "destemail = kenso.trabing@outlook.com" >> /etc/fail2ban/jail.local'
+sh -c 'echo "destemail = sqlconsult@hotmail.com" >> /etc/fail2ban/jail.local'
 
 sh -c 'echo "sendername = security@digitalocean" >> /etc/fail2ban/jail.local'
 
