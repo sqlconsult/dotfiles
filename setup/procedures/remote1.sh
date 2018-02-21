@@ -60,58 +60,111 @@ fi
 ### Configuration
 ###
 
+# make steve the owner of /etc/ssh/steve
 chown -R steve:steve /etc/ssh/steve
 
+# change permissions for user, group and others to
+#   user: all
+#   group r+x
+#   others: r+x
 chmod 755 /etc/ssh/steve
 
+# change permissions: user = r+w, group & others r
 chmod 644 /etc/ssh/steve/authorized_keys
 
-sed -i -e '/^#AuthorizedKeysFile/s/^.*$/AuthorizedKeysFile \/etc\/ssh\/steve\/authorized_keys/' /etc/ssh/sshd_config
-
-sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
-
+# modify sshd file, change AurhorizedKeysFile to /etc/ssh/steve/authorized_keys
+#    -i = files are to be edited in-place
+#    -e = Add the commands in script to the set of commands to be run while processing the input.
 sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
 
+# execute shell command echo and append output to sshd_config
+#    -c  = Read commands from string.
+#     >> = redirects output to a file appending the redirected output at the end.
 sh -c 'echo "" >> /etc/ssh/sshd_config'
 
 sh -c 'echo "" >> /etc/ssh/sshd_config'
 
 sh -c 'echo "AllowUsers steve" >> /etc/ssh/sshd_config'
 
+# reload - Asks all units listed on the command line to reload their configuration
+#    sshd (SSH Daemon) is the daemon program for ssh
 systemctl reload sshd
 
+# start - Start (activate) one or more units specified on the command line
 systemctl start firewalld
 
+# --reload - Reload firewall rules and keep state information
 firewall-cmd --reload
 
+# enable - Enable one or more unit files or unit file instances, as specified
+#          on the command line. This will create a number of symlinks as
+#          encoded in the "[Install]" sections of the unit files.
 systemctl enable firewalld
 
+# What ports, IPs and protocols we listen for
 sed -i -e '/^Port/s/^.*$/Port 6174/' /etc/ssh/sshd_config
 
+# --permanent - --permanent can be used to set options permanently. These changes
+# --            are not effective immediately, only after service restart/reload
+# --            or system reboot.
+# Enable port 61743/tcp immediately and permanently in default zone.
 firewall-cmd --add-port 6174/tcp --permanent
 
+# Reload firewall rules and keep state information
 firewall-cmd --reload
 
+# reload - Asks all units listed on the command line to reload their configuration.
 systemctl reload sshd
 
+# set-timezone [TIMEZONE]
+#    Set the system time zone to the specified value.
+#    Available timezones can be listed with list-timezones.
 timedatectl set-timezone America/New_York
 
+# fallocate - manipulate file space
+#    allocate 3Gb space to /swapfile
 fallocate -l 3G /swapfile
 
+# allow user r+w to swap file.  group & everyone else no perm's
 chmod 600 /swapfile
 
+# set up a Linux swap area
 mkswap /swapfile
 
+# fstab is a system configuration file on Linux and other
+# Unix-like operating systems that contains information about
+# major filesystems on the system. It takes its name from
+# file systems table, and it is located in the /etc directory.
 sh -c "echo '/swapfile none swap sw 0 0' >> /etc/fstab"
 
+# Swappiness is a Linux kernel parameter that controls the relative
+# weight given to swapping out of runtime memory, as opposed to dropping
+# pages from the system page cache. Swappiness can be set to values
+# between 0 and 100 inclusive. A low value causes the kernel to avoid
+# swapping; a higher value causes the kernel to try to use swap space.
+#
+# The default value is 60;
+#
+#     10 - This value is sometimes recommended to improve
+#          performance when sufficient memory exists in a system.
 sysctl vm.swappiness=10
 
 sh -c "echo 'vm.swappiness=10' >> /etc/sysctl.conf"
 
+# This setting will make the kernel somewhat more aggressive in
+# reclaiming RAM from the disk and swap caches, freeing that memory
+# to be used by running applications.
 sysctl vm.vfs_cache_pressure=30
 
 sh -c 'echo "vm.vfs_cache_pressure=30" >> /etc/sysctl.conf'
 
+####################################################################################
+#
+# NGINX is a free, open-source, high-performance HTTP server and reverse proxy,
+# as well as an IMAP/POP3 proxy server. NGINX is known for its high performance,
+# stability, rich feature set, simple configuration, and low resource consumption.
+# NGINX is one of a handful of servers written to address the C10K problem.
+####################################################################################
 sh -c 'echo "log_format timekeeper \$remote_addr - \$remote_user [\$time_local] " >> /etc/nginx/conf.d/timekeeper-log-format.conf'
 
 sed -i "s/\$remote_addr/\'\$remote_addr/" /etc/nginx/conf.d/timekeeper-log-format.conf
@@ -300,9 +353,11 @@ sh -c "echo 'gzip_min_length 256;' >> /etc/nginx/conf.d/gzip.conf"
 
 sh -c "echo 'gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript application/javascript application/vnd.ms-fontobject application/x-font-ttf font/opentype image/svg+xml image/x-icon;' >> /etc/nginx/conf.d/gzip.conf"
 
+# -t — test the configuration file
 nginx -t
 
 systemctl start nginx
+####################################################################################
 
 firewall-cmd --permanent --zone=public --add-service=http
 
@@ -312,6 +367,11 @@ firewall-cmd --reload
 
 systemctl enable nginx
 
+# Fail2ban scans log files (e.g. /var/log/apache/error_log) and bans IPs that
+# show the malicious signs -- too many password failures, seeking for exploits, etc.
+#
+# configure Fail2ban
+#
 systemctl enable fail2ban
 
 sh -c 'echo "[DEFAULT]" >> /etc/fail2ban/jail.local'
