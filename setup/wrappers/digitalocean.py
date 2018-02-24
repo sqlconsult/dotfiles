@@ -39,6 +39,9 @@ def builder(params):
     # keys = json.loads(requests.get('https://api.digitalocean.com/v2/account/keys', headers=headers).text)['ssh_keys']
     # payload['ssh_keys'] = [str(key['id']) for key in keys if key['name'] == socket.gethostname()]
     payload['ssh_keys'] = [get_key_id(params['pa_token'], params['working_dir'])]
+
+    # print('ssh_keys:', payload['ssh_keys'])
+
     payload['tags'] = [params['tag']]
     endstate = 'curl -X POST "{endpoint}"            \
                 -d \'{payload}\'                     \
@@ -76,7 +79,8 @@ def get_key_id(token, working_dir):
     # print(cmd)
     os.system(cmd)
 
-    json_data = open('./curl_out.txt').read()
+    filnm = '{working_dir}/curl_out.txt'.format(working_dir=working_dir)
+    json_data = open(filnm).read()
     values = json.loads(json_data)
 
     return values['ssh_keys'][0]['id']

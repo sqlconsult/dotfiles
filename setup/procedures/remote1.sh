@@ -31,7 +31,7 @@ if [ 1 -eq 1 ]; then
     ###
     echo swordfish | sudo -S mkdir /usr/lib/jvm
     cd /usr/lib/jvm
-    sudo tar -xvzf ~/Downloads/jdk-9.0.4_linux-x64_bin.tar.gz
+    sudo tar -xvzf ~/Downloads/jdk-9.0.4_linux-x64_bin.tar.gz 1>/dev/null 2>/dev/null
     ###
     ### update environment variables file
     ###

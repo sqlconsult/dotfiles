@@ -49,30 +49,30 @@ def harden(writeout_file, params):
     for payload in payloads:
         ip_addresses.append(digitalocean.get_host(payload['id'], writeout_file, params))
 
-    # print('ip_addresses:', ip_addresses)
+    print('ip_addresses:', ip_addresses)
 
     for ip_address in ip_addresses:
-        # print('remote0.sh')
+        print('remote0.sh')
         os.system('ssh -o "StrictHostKeyChecking no" root@{ip_address} \'bash -s\' < procedures/remote0.sh'
                   .format(ip_address=ip_address))
 
-        # print('id_rsa.pub')
+        print('id_rsa.pub')
         os.system('scp /home/steve/.ssh/id_rsa.pub root@{ip_address}:/etc/ssh/steve/authorized_keys'
                   .format(ip_address=ip_address))
 
-        # print('credentials')
+        print('credentials')
         os.system('sh -c \'echo "steve:swordfish" > {working_dir}/.credentials\''.
                   format(working_dir=params['working_dir']))
 
-        # print('scp credentials')
+        print('scp credentials')
         os.system('scp {working_dir}/.credentials root@{ip_address}:/home/steve/'
                   .format(working_dir=params['working_dir'], ip_address=ip_address))
 
-        # print('remote1.sh')
+        print('remote1.sh')
         os.system('ssh -o "StrictHostKeyChecking no" root@{ip_address} \'bash -s\' < procedures/remote1.sh'
                   .format(ip_address=ip_address))
 
-        # print('remove credentials')
+        print('remove credentials')
         os.system('rm {working_dir}/.credentials'.format(working_dir=params['working_dir']))
 
     return ip_addresses
