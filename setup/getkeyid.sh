@@ -1,0 +1,1 @@
+curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer 7b439befc034bebf3493852dc4578c79dfd6a4aeab06410cf06af77a0d49e9c1" "https://api.digitalocean.com/v2/account/keys" > getkeyid.log

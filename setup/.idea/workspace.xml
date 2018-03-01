@@ -4,34 +4,11 @@
     <list default="true" id="78af8b3b-824a-45c0-ac37-305bd4fe756b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../id_rsa.pub" afterPath="$PROJECT_DIR$/../id_rsa.pub" />
       <change beforePath="$PROJECT_DIR$/../install.sh" afterPath="$PROJECT_DIR$/../install.sh" />
-      <change beforePath="$PROJECT_DIR$/.idea/setup.iml" afterPath="$PROJECT_DIR$/.idea/setup.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/logs/build-2018216_134254-82700199.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/build-2018216_134254-82700200.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/build-2018216_134254-82700201.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/build-2018216_134254.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/build-2018216_135527-82701141.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/build-2018216_135527-82701142.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/build-2018216_135527-82701143.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/build-2018216_135527.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/build-2018216_1599-82727366.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/build-2018216_1599.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/build-2018221_16335-83254300.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/build-2018221_16335.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/curl_out.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kt-dotfiles" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/logs/curl_out.txt" afterPath="$PROJECT_DIR$/logs/curl_out.txt" />
       <change beforePath="$PROJECT_DIR$/params.json" afterPath="$PROJECT_DIR$/params.json" />
       <change beforePath="$PROJECT_DIR$/procedures/remote1.sh" afterPath="$PROJECT_DIR$/procedures/remote1.sh" />
-      <change beforePath="$PROJECT_DIR$/setup/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/setup/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/setup/.idea/setup.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/setup/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/setup/procedures/remote0.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/setup/procedures/remote1.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/setup/run.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/setup/shell.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/setup/wrappers/digitalocean.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/shell.py" afterPath="$PROJECT_DIR$/shell.py" />
-      <change beforePath="$PROJECT_DIR$/wrappers/digitalocean.py" afterPath="$PROJECT_DIR$/wrappers/digitalocean.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,8 +22,8 @@
       <file leaf-file-name="remote1.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/procedures/remote1.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="405" column="0" lean-forward="true" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,38 +32,8 @@
       <file leaf-file-name="digitalocean.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrappers/digitalocean.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remote0.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/procedures/remote0.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="params.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/params.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shell.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shell.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="64" column="57" lean-forward="true" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+            <state relative-caret-position="1512">
+              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,9 +53,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/params.json" />
         <option value="$PROJECT_DIR$/shell.py" />
         <option value="$PROJECT_DIR$/wrappers/digitalocean.py" />
+        <option value="$PROJECT_DIR$/params.json" />
         <option value="$PROJECT_DIR$/procedures/remote1.sh" />
       </list>
     </option>
@@ -122,7 +69,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="118" />
     <option name="y" value="85" />
-    <option name="width" value="1193" />
+    <option name="width" value="1009" />
     <option name="height" value="649" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -141,6 +88,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,11 +96,15 @@
               <item name="setup" type="b2602c69:ProjectViewProjectNode" />
               <item name="setup" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="setup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="setup" type="462c0819:PsiDirectoryNode" />
+              <item name="procedures" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -191,7 +143,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="118" y="85" width="1193" height="649" extended-state="0" />
+    <frame x="118" y="85" width="1009" height="649" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5027712" order="7" side_tool="true" content_ui="tabs" />
@@ -199,7 +151,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24584718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1969824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23290387" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -228,9 +180,51 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/procedures/remote1.sh">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/procedures/remote1.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrappers/digitalocean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1548">
+          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/procedures/remote0.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="64" column="57" lean-forward="true" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/procedures/remote1.sh">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -238,7 +232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -246,7 +239,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -275,7 +267,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6714">
           <caret line="373" column="1" lean-forward="false" selection-start-line="373" selection-start-column="1" selection-end-line="373" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -304,7 +295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6714">
           <caret line="373" column="1" lean-forward="false" selection-start-line="373" selection-start-column="1" selection-end-line="373" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -326,7 +316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6444">
           <caret line="358" column="27" lean-forward="false" selection-start-line="358" selection-start-column="27" selection-end-line="358" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -355,7 +344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6444">
           <caret line="358" column="27" lean-forward="true" selection-start-line="358" selection-start-column="27" selection-end-line="358" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -391,7 +379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6444">
           <caret line="358" column="27" lean-forward="true" selection-start-line="358" selection-start-column="27" selection-end-line="358" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -420,7 +407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6444">
           <caret line="358" column="27" lean-forward="true" selection-start-line="358" selection-start-column="27" selection-end-line="358" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -449,7 +435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6444">
           <caret line="358" column="27" lean-forward="true" selection-start-line="358" selection-start-column="27" selection-end-line="358" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -459,7 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-692">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -467,7 +451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -475,78 +458,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/build-2018223_175528.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/build-2018223_175528.json" />
     <entry file="file://$PROJECT_DIR$/logs/curl_out.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/build-2018223_18351.json">
+    <entry file="file://$PROJECT_DIR$/logs/build-2018223_18351.json" />
+    <entry file="file://$PROJECT_DIR$/logs/build-2018223_18351-83507952.json" />
+    <entry file="file://$PROJECT_DIR$/procedures/remote0.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/build-2018223_18351-83507952.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="234">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/params.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="54">
+          <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shell.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="64" column="57" lean-forward="true" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
-          <folding />
+        <state relative-caret-position="455">
+          <caret line="64" column="57" lean-forward="false" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wrappers/digitalocean.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/procedures/remote0.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="1512">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/procedures/remote1.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="405" column="0" lean-forward="true" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+        <state relative-caret-position="286">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
           <folding />
         </state>
       </provider>

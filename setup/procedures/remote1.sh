@@ -12,7 +12,7 @@ apt-get -y install fail2ban firewalld nginx ntp tree python3 python3-pip python-
 
 pip3 install --upgrade pip
 
-pip3 install jupyter matplotlib numpy pandas
+pip3 install flask jupyter matplotlib numpy pandas
 
 if [ 1 -eq 1 ]; then
     ###
@@ -75,6 +75,11 @@ chmod 644 /etc/ssh/steve/authorized_keys
 # modify sshd file, change AurhorizedKeysFile to /etc/ssh/steve/authorized_keys
 #    -i = files are to be edited in-place
 #    -e = Add the commands in script to the set of commands to be run while processing the input.
+
+sed -i -e '/^#AuthorizedKeysFile/s/^.*$/AuthorizedKeysFile \/etc\/ssh\/steve\/authorized_keys/' /etc/ssh/sshd_config
+
+sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
+
 sed -i -e '/^PasswordAuthentication/s/^.*$/PasswordAuthentication no/' /etc/ssh/sshd_config
 
 # execute shell command echo and append output to sshd_config
@@ -107,8 +112,9 @@ sed -i -e '/^Port/s/^.*$/Port 6174/' /etc/ssh/sshd_config
 # --permanent - --permanent can be used to set options permanently. These changes
 # --            are not effective immediately, only after service restart/reload
 # --            or system reboot.
-# Enable port 61743/tcp immediately and permanently in default zone.
+# Enable ports 6174/tcp & 5000/tcp immediately and permanently in default zone.
 firewall-cmd --add-port 6174/tcp --permanent
+firewall-cmd --add-port 5000/tcp --permanent
 
 # Reload firewall rules and keep state information
 firewall-cmd --reload
